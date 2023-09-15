@@ -4,6 +4,7 @@
 using namespace std;
 
 const double pi = 3.14;
+const double e = 2.71;
 
 int main()
 {
@@ -32,6 +33,7 @@ int main()
 
     s = (a * b) / 2;
     c = pow(a, 2) + pow(b, 2);
+    
     cout << "Площадь треугольника: " << s << "\nГипотенуза: " << c << endl;
     return 0;*/
 
@@ -46,14 +48,30 @@ int main()
         s = pi * (pow(r2, 2) - pow(r1, 2));
         cout << "Площадь кольца: " << s << endl;
         return 0;
-    }
-    else {
+    } else {
         cout << "Где то произошла ошибка!";
         return 1;
     }*/
 
+    // Задача #4
+   /* double x, y, z, a, b;
+
+    cout << "Введите x: ";
+    cin >> x;
+    cout << "Введите y: ";
+    cin >> y;
+    cout << "Введите z: ";
+    cin >> z;
+
+    a = (sqrt(fabs(x * 1)) * pow(fabs(y), 1 / 3.0)) / (1 * pow(x, 2) / 2 * pow(y, 2) / 4);
+    b = x * atan(z) * exp(x * 3);
+   
+    cout << "a равна = " << a << endl;
+    cout << "b равна = " << b << endl;
+    return 0;*/
+
     // Задача #5
-    /*float a, b, c, h;
+    /*float a, b, c, h, cr;
 
     cout << "Введите длину меньшего основания трапеции: " << endl;
     cin >> a;
@@ -62,7 +80,8 @@ int main()
     cout << "Введите угол при большем основании: " << endl;
     cin >> c;
 
-    h = (b - a) / 2 * tan(c);
+    cr = c * (pi / 180);
+    h = (b - a) / 2 * tan(cr);
     cout << "Площадь трапеции равна " << ((a + b) / 2) * h << endl;
     return 0;*/
 
@@ -145,7 +164,7 @@ int main()
     // Задача #11
     /*double a, s, ri, rc, h;
 
-    cout << "Введите размер стороны равносторенного треугольника: ";
+     cout << "Введите размер стороны равносторенного треугольника: ";
     cin >> a;
 
     s = pow(a, 2) * sqrt(3) / 4;
