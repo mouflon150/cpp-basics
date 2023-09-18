@@ -14,7 +14,7 @@ int main()
     // Задача #1
     /*double x, f;
 
-    cout << "Input x: "; 
+    cout << "Введите x: "; 
     cin >> x;
 
     if (x <= 0)
@@ -50,5 +50,22 @@ int main()
     return 0;*/
 
     // Задача #3
+    double x, y, z;
+    bool checking = true;
 
+    cout << "Введите действительные числа x, y, z через пробел: ";
+    cin >> x; cin >> y; cin >> z;
+
+    if ((x + y) < z)
+        checking = false;
+    else if ((x + z) < y)
+        checking = false;
+    else if ((z + y) < x)
+        checking = false;
+
+    if (checking == true)
+        cout << "Треугольник существует";
+    else
+        cout << "Такого треугольника нет!";
+    return 0;
 }
