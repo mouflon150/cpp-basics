@@ -4,7 +4,6 @@
 using namespace std;
 
 const double pi = 3.14;
-const double e = 2.71;
 
 int main()
 {
@@ -24,7 +23,7 @@ int main()
     return 0;*/
 
     // Задача #2
-    /*int a, b, c ,s;
+    /*double a, b, c ,s;
 
     cout << "Введите первый катет: ";
     cin >> a;
@@ -36,7 +35,6 @@ int main()
     
     cout << "Площадь треугольника: " << s << "\nГипотенуза: " << c << endl;
     return 0;*/
-
 
     // Задача #3
     /*double s, r1, r2;
@@ -54,7 +52,7 @@ int main()
     }*/
 
     // Задача #4
-   /* double x, y, z, a, b;
+    /*double x, y, z, a, b;
 
     cout << "Введите x: ";
     cin >> x;
@@ -63,27 +61,27 @@ int main()
     cout << "Введите z: ";
     cin >> z;
 
-    a = (sqrt(fabs(x * 1)) * pow(fabs(y), 1 / 3.0)) / (1 * pow(x, 2) / 2 * pow(y, 2) / 4);
-    b = x * atan(z) * exp(x * 3);
+    a = (sqrt(fabs(x - 1)) - pow(fabs(y), 1 / 3.0)) / (1 + pow(x, 2) / 2 + pow(y, 2) / 4);
+    b = x * atan(z) + exp(-(x + 3));
    
-    cout << "a равна = " << a << endl;
-    cout << "b равна = " << b << endl;
+    cout << "a равняется = " << a << endl;
+    cout << "b равняется = " << b << endl;
     return 0;*/
 
     // Задача #5
-    /*float a, b, c, h, cr;
+    float a, b, c, h, cr;
 
-    cout << "Введите длину меньшего основания трапеции: " << endl;
-    cin >> a;
     cout << "Введите длину большего основания трапеции: " << endl;
+    cin >> a;
+    cout << "Введите длину меньшего основания трапеции: " << endl;
     cin >> b;
     cout << "Введите угол при большем основании: " << endl;
     cin >> c;
 
     cr = c * (pi / 180);
-    h = (b - a) / 2 * tan(cr);
+    h = (a - b) / 2 * tan(cr);
     cout << "Площадь трапеции равна " << ((a + b) / 2) * h << endl;
-    return 0;*/
+    return 0;
 
     // Задача #6
     /*int a, b, c, p, s;
@@ -98,7 +96,7 @@ int main()
     p = (a + b + c) / 2;
     s = sqrt(p * (p - a) * (p - b) * (p - c));
 
-    cout << "Площаль треугольника равна: " << s << endl;
+    cout << "Площадь треугольника равна: " << s << endl;
     return 0;*/
 
     // Задача #7
