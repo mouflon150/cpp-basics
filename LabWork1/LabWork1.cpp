@@ -69,7 +69,7 @@ int main()
     return 0;*/
 
     // Задача #5
-    float a, b, c, h, cr;
+   /* float a, b, c, h, cr;
 
     cout << "Введите длину большего основания трапеции: " << endl;
     cin >> a;
@@ -81,7 +81,7 @@ int main()
     cr = c * (pi / 180);
     h = (a - b) / 2 * tan(cr);
     cout << "Площадь трапеции равна " << ((a + b) / 2) * h << endl;
-    return 0;
+    return 0;*/
 
     // Задача #6
     /*int a, b, c, p, s;
