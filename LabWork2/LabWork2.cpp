@@ -27,7 +27,7 @@ int main()
     return 0;*/
 
     // Задача #2
-    /*double a, b, c, d, x, x1, x2;
+    double a, b, c, d, x, x1, x2;
 
     cout << "Введите действительные числа a, b, c через пробел: ";
     cin >> a; cin >> b; cin >> c;
@@ -41,13 +41,13 @@ int main()
         cout << "x2 = " << x2 << endl;
     }
     else if (d == 0) {
-        x = - b / (2 * a);
+        x = ( - b / (2 * a));
         cout << "x = " << x << endl;
     }
     else {
         cout << "Корней нет";
     }
-    return 0;*/
+    return 0;
 
     // Задача #3
     /*double x, y, z;
@@ -278,7 +278,7 @@ int main()
     return 0;*/
 
     // Задача #16
-    int n;
+    /*int n;
 
     cout << "Введите количество лепестков (целое число): ";
     cin >> n;
@@ -289,5 +289,23 @@ int main()
     else {
         cout << "Гадание на ромашке: Не любит!" << endl;
     }
-    return 0;
+    return 0;*/
+
+    // Задача #17
+    /*double roomTemperature;
+
+    cout << "Введите текущую температуру в комнате (в градусах Цельсия): ";
+    cin >> roomTemperature;
+
+    if (roomTemperature > 60.0) {
+        cout << "Пожароопасная ситуация! Температура превышает 60°C." << endl;
+    }
+    else {
+        cout << "Температура в пределах нормы." << endl;
+    }
+
+    return 0;*/
+
+    // Задача #18
+    
 }
