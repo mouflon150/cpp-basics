@@ -5,7 +5,7 @@
 
 using namespace std;
 
-//const double pi = 3.14;
+const double pi = 3.14;
 
 int main()
 {
@@ -148,7 +148,7 @@ int main()
     return 0;*/
 
     // Задача #9
-    double a, b, c;
+    /*double a, b, c;
 
     cout << "Введите действительные числа a, b, c: " << endl;
     cin >> a >> b >> c;
@@ -165,5 +165,98 @@ int main()
     }
     cout << a << " " << b << " " << c << endl;
     system("pause");
+    return 0;*/
+
+    // Задача #10
+    /*int n;
+
+    cout << "Введите натуральное числое до 9999: ";
+    cin >> n;
+    if (n <= 9999) {
+        if ((n % 10 == n / 1000) && ((n / 10) % 10 == (n / 100) % 10))
+            cout << "Palindrome" << endl;
+        else
+            cout << "Not palindrome" << endl;
+    }
+    system("pause");
+    return 0;*/
+
+    // Задача #11
+    /*int A, B, C, N, P;
+    cout << "Введите A B C\n";
+    cin >> A >> B >> C;
+    cout << "Введите время разговора (min)\n";
+    cin >> N;
+    if (N <= A) {
+        cout << "Уложились в норму (min)\n";
+        P = B;
+    }
+    else {
+        P = B + ((N - A) * C);
+        cout << "Не уложились в норму (min)\n";
+    }
+    cout << "Плата составила " << P << " руб. " << endl;
+    system("pause");
+    return 0;*/
+
+    // Задача #12
+    /*char answer;
+
+    cout << "Кто ты: девочка или мальчик? Введите D или M\n";
+    cin >> answer;
+
+    switch (answer) {
+    case 'D':
+        cout << "Мне нравятся девочки!";
+        break;
+    case 'M':
+        cout << "Мне нравятся маль чики!";
+        break;
+    default:
+        cout << "Либо Д, либо М - третьего не дано!";
+        break;
+    }
+    system("pause");
+    return 0;*/
+
+    // Задача #13
+    /*double v1, v2, t, t1;
+
+    cout << "Введите скорость грузового автомобиля (км/ч): ";
+    cin >> v1;
+    cout << "Введите скорость легкового автомобиля (км/ч): ";
+    cin >> v2;
+    cout << "Введите время движения грузового автомобиля (часы): ";
+    cin >> t;
+    cout << "Введите время после выезда легкового автомобиля (часы): ";
+    cin >> t1;
+
+    double distance_by_truck = v1 * t;
+    double distance_by_car = v2 * (t + t1);
+
+    if (distance_by_car >= distance_by_truck) {
+        cout << "Легковой автомобиль догонит грузовой автомобиль." << endl;
+    }
+    else {
+        cout << "Легковой автомобиль не догонит грузовой автомобиль." << endl;
+    }
+    return 0;*/
+
+    // Задача #14
+    int x, y;
+
+    cout << "Введите значение переменной x: ";
+    cin >> x;
+
+    cout << "Введите значение переменной y: ";
+    cin >> y;
+
+    if (x < y) {
+        int temp = x;
+        x = y;
+        y = temp;
+    }
+
+    cout << "Перераспределенные значения: x = " << x << ", y = " << y << endl;
     return 0;
 }
